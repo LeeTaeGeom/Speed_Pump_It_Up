@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="3dp"
+            android:id="@+id/rnd1"
+            android:src="@drawable/question"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="3dp"
+            android:id="@+id/rnd2"
+            android:src="@drawable/question"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="3dp"
+            android:id="@+id/rnd3"
+            android:src="@drawable/question"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="3dp"
+            android:id="@+id/rnd4"
+            android:src="@drawable/question"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="준비하시면 시작버튼을 눌러주세요!"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:id="@+id/info"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:id="@+id/countdown"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:text="랭킹보기"
+            android:textSize="15dp"
+            android:backgroundTint="#72C0E3"
+            android:textStyle="bold"
+            android:id="@+id/rank"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/standard"
+            android:text="시작"
+            android:textSize="25dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white" />
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/leftbtn"
+            android:layout_toLeftOf="@+id/standard"
+            android:layout_centerVertical="true"
+            android:background="@drawable/left_arrow"/>
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/rightbtn"
+            android:layout_toRightOf="@+id/standard"
+            android:layout_centerVertical="true"
+            android:background="@drawable/right_arrow"/>
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/upbtn"
+            android:layout_above="@+id/standard"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/up_arrow"
+            />
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/downbtn"
+            android:layout_below="@+id/standard"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/down_arrow"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
